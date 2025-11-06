@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>نمونه SVG با CSS</title>
+<style>
+  /* CSS برای HTML عناصر */
+  .my-rect {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+
+  /* CSS برای SVG */
+  circle {
+    fill: green;
+    stroke: black;
+    stroke-width: 4;
+  }
+</style>
+</head>
+<body>
+
+  <div class="my-rect">متن سفید</div>
+
+  <!-- SVG طراحی شده -->
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40"/>
+  </svg>
+
+</body>
+</html>

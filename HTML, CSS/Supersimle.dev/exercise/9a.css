@@ -1,0 +1,19 @@
+.title {
+  font-family: Arial;
+}
+
+.red-square {
+  background-color: rgb(18, 11, 11);
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(150, 150, 150);
+  width: 330px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+
+}
+
+.add {
+  color: gray;
+}
