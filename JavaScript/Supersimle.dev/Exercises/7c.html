@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7c</title>
+  </head>
+
+  <body>
+    <script>
+      function greet(name, undefined = "undefind!") {
+        if (!name) {
+          console.log("Hi there!");
+        } else {
+          console.log(`Hello ${name}!`);
+        }
+      }
+
+      greet("Shaho");
+      greet("Simon");
+      greet();
+    </script>
+  </body>
+</html>

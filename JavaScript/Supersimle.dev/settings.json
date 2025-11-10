@@ -1,23 +1,23 @@
 {
-  //"editor.snippetSuggestions": "none"
-  // غیرفعال کردن پیشنهاد خودکار کد
+  "editor.snippetSuggestions": "none"
+  
   "editor.quickSuggestions": {
     "other": false,
     "comments": false,
     "strings": false
   },
-  // جلوگیری از نمایش پیشنهادها هنگام تایپ
+  
   "editor.suggestOnTriggerCharacters": false,
-  // غیرفعال کردن تکمیل خودکار (IntelliSense)
+
   "editor.wordBasedSuggestions": "off",
-  // غیرفعال کردن نمایش امضا یا راهنمای پارامترها
+
   "editor.parameterHints.enabled": false,
-  // غیرفعال کردن hover (نمایش توضیحات هنگام رفتن موس روی متغیر)
+ 
   "editor.hover.enabled": false,
-  // غیرفعال کردن پیشنهادهای خودکار هنگام تایپ نقطه و ...
+
   "javascript.suggest.enabled": false,
   "typescript.suggest.enabled": false,
-  // جلوگیری از auto import
+
   "typescript.suggest.autoImports": false,
   "javascript.suggest.autoImports": false
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7h</title>
+  </head>
+
+  <body>
+    <script>
+      function convertLength(length, from, to) {
+        let round = "";
+        if (from === "km" && to === "miles") {
+          return `${length / 1.6} miles`;
+        } else if (from === "miles" && to === "km") {
+          return `${length * 1.6}`;
+        } else if (from === to) {
+          return `${length} ${to}`;
+        } else if (from === "miles" && to === "ft") {
+          return `${length * 5280} ft`;
+        } else if (from === "km" && to === "ft") {
+          return `${length * 3281} ft`;
+        } else if (from === "ft" && to === "miles") {
+          return `${length / 5280} miles`;
+        } else if (from === "ft" && to === "km") {
+          round = `${length / 3281} `;
+          return Math.round(round) + " km";
+        }
+      }
+
+      console.log(convertLength(50, "miles", "km"));
+      console.log(convertLength(32, "km", "miles"));
+      console.log(convertLength(50, "km", "km"));
+
+      console.log(convertLength(5, "miles", "ft"));
+      console.log(convertLength(5, "km", "ft"));
+      console.log(convertLength(50000, "ft", "miles"));
+      console.log(convertLength(50000, "ft", "km"));
+    </script>
+  </body>
+</html>
