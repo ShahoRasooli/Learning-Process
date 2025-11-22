@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
 
-<head>
-  <title>
-    Rock Paper Scissors
-  </title>
-</head>
+  <body>
+    <p>Rock Paper Scissors</p>
 
-<body>
-  <p>Rock Paper Scissors</p>
-
-  <button onclick="
+    <button
+      onclick="
     const randomNumber = Math.random();
 
     let computerMove = '';
@@ -31,11 +29,14 @@
       result = 'You win.';
     }
     
-    alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
-    ">Rack
-  </button>
+    alert(`You picked Rock. Computer picked ${computerMove}. ${result}`);
+    "
+    >
+      Rack
+    </button>
 
-  <button onclick="
+    <button
+      onclick="
     const randomNumber = Math.random();
 
     let computerMove = '';
@@ -57,11 +58,13 @@
     }
     
     alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
-    ">
-    Paper
-  </button>
+    "
+    >
+      Paper
+    </button>
 
-  <button onclick="
+    <button
+      onclick="
     const randomNumber = Math.random();
 
     let computerMove = '';
@@ -83,13 +86,11 @@
     }
     
     alert(`You picked Scissors. Computer picked ${computerMove}. ${result}`);
-    ">
-    Scissors
-  </button>
+    "
+    >
+      Scissors
+    </button>
 
-  <script>
-
-  </script>
-</body>
-
+    <script></script>
+  </body>
 </html>
