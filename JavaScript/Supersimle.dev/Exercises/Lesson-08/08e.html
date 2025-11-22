@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>08e</title>
+  </head>
+
+  <body>
+    <script>
+      function isSameProduct(product1, product2) {
+        if (
+          product1.name === product2.name &&
+          product1.price === product2.price
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      /*
+      const product1 = {
+        name: "basketball",
+        price: 1500,
+      };
+
+      const product2 = {
+        name: "socks",
+        price: 360,
+      };
+
+      console.log(isSameProduct(product1, product2));
+      
+
+      function isSameProduct(product1, product2) {
+        return (
+          product1.name === product2.name && product1.price === product2.price
+        );
+      }
+*/
+
+      const product1 = {
+        name: "basketball",
+        price: 2095,
+      };
+
+      const product2 = {
+        name: "socks",
+        price: 1090,
+      };
+
+      const product3 = {
+        name: "basketball",
+        price: 2095,
+      };
+
+      console.log(isSameProduct(product1, product2));
+      console.log(isSameProduct(product1, product3));
+    </script>
+  </body>
+</html>
