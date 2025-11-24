@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* The word "toggle" means turn on/off. */
+      .toggle-button,
+      .music-button,
+      .tech-button {
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="toggle-button js-button"
+      onclick="
+      const button = document.querySelector('.js-button');
+      if (!button.classList.contains('is-toggled')) {
+        button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');
+      }
+    "
+    >
+      Gaming
+    </button>
+
+    <button
+      class="music-button js-music-button"
+      onclick="
+    const musicButton = document.querySelector('.js-music-button');
+    if(!musicButton.classList.contains('is-toggled')) {
+      musicButton.classList.add('is-toggled');
+    } else {
+      musicButton.classList.remove('is-toggled');
+    }
+    "
+    >
+      Music
+    </button>
+
+    <button
+      class="tech-button js-tech-button"
+      onclick="
+    const techButton = document.querySelector('.js-tech-button');
+    if(!techButton.classList.contains('is-toggled')) {
+      techButton.classList.add('is-toggled');
+    } else {
+      techButton.classList.remove('is-toggled');
+    }
+    "
+    >
+      Tech
+    </button>
+  </body>
+</html>
