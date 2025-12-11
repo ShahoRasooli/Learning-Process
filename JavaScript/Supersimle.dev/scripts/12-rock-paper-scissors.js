@@ -6,7 +6,7 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
 updateScoreElement();
 /*
-      if (!score) {
+      if (!score) {setInterval
         score = {
           wins: 0,
           losses: 0,
@@ -20,7 +20,7 @@ let intervalID;
 
 function autoPlay() {
   if (!isAutoPlaying) {
-    intervalID = setInterval(function () {
+    intervalID = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     }, 1000);
@@ -31,6 +31,9 @@ function autoPlay() {
   }
 }
 
+document.querySelector(".js-rock-button").addEventListener("click", () => {
+  playGame("Rock");
+});
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 

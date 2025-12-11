@@ -3,7 +3,7 @@
   
   "editor.quickSuggestions": {
     "other": true,
-    "comments": false,
+    "comments": true,
     "strings": false
   },
 
@@ -35,9 +35,11 @@
   
   "editor.codeActionsOnSave": {
   "source.fixAll": true
-    
 }
 
 
+    "github.copilot.enable": {
+        "*": false
+    }
 
 }
