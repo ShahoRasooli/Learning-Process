@@ -8,3 +8,5 @@ This repository contains my practice files and exercises from the **SuperSimpleD
 
 ## 🔗 Credits
 All exercises are based on the tutorials by [SuperSimpleDev](https://www.youtube.com/@SuperSimpleDev).
+
+💥 :boom:
